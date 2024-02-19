@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <div id="container"></div>
 <script type="module">
-
-import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
-
-console.log(d3);
-
+    import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+    console.log(d3);
 </script>
+<script src="script.js"></script>
+<script type="styles/css" src="styles.css"></script>
 
 <div id="content">
     <button id="sampleButton">Press me!</button>
@@ -15,14 +14,3 @@ console.log(d3);
 <div id="buttons">
     <button id="startButton" onclick="startButtonFunc();">Reveal sample button</button>
 </div>
-
-<script>
-    function startButtonFunc() {
-        var sampleButton = document.getElementById("sampleButton");
-        if (sampleButton.style.visibility == "hidden") {
-            sampleButton.style.visibility = "visible";
-        } else {
-            sampleButton.style.visibility = "hidden";
-        }
-    }
-</script>
