@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<div id="container"></div>
-<script type="module">
-    import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
-    console.log(d3);
-</script>
-<script src="script.js"></script>
-<link href="styles.css" rel="stylesheet" type="text/css" />
 
-<div id="content">
-    <button id="sampleButton">Press me!</button>
-</div>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+    </head>
 
-<div id="buttons">
-    <button id="startButton" onclick="startButtonFunc();">Reveal sample button</button>
-</div>
+    <div id="container"></div>
+    <script type="module">
+        import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+        console.log(d3);
+    </script>
+
+    <script src="script.js"></script>
+
+    <div id="content">
+        <button id="sampleButton">Press me!</button>
+    </div>
+
+    <div id="buttons">
+        <button id="startButton" onclick="startButtonFunc();">Reveal sample button</button>
+    </div>
+</html>
