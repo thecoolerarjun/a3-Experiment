@@ -9,7 +9,7 @@ console.log(d3);
 </script>
 
 <div id="content">
-    <button id="sampleButton" visible="false">Reveal start button</button>
+    <button id="sampleButton" visibility="hidden">Reveal start button</button>
 </div>
 
 <div id="buttons">
@@ -19,10 +19,10 @@ console.log(d3);
 <script>
     function startButtonFunc() {
         var sampleButton = document.getElementById("sampleButton");
-        if (sampleButton.visible == "false") {
-            sampleButton.visible = "true";
+        if (sampleButton.visibility == "hidden") {
+            sampleButton.visibility = "visible";
         } else {
-            sampleButton.visible = "false";
+            sampleButton.visible = "hidden";
         }
     }
 </script>
