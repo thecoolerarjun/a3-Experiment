@@ -231,6 +231,7 @@
 }
 
         function downloadResults() {
+            const fs = require('fs');
             // Construct CSV data
             var csvContent = "data:text/csv;charset=utf-8,";
             csvContent += "Left Box Color,Left Box Number of Circles,Right Box Color,Right Box Number of Circles,User's Answer\n";
@@ -246,6 +247,10 @@
             link.setAttribute("href", encodedUri);
             link.setAttribute("download", "game_results.csv");
             document.body.appendChild(link);
+            fs.writeFile('game_results.csv', csvContent, (err) => {
+            // In case of a error throw err.
+            if (err) throw err;
+            });
 
             // Trigger download
             link.click();
